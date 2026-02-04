@@ -70,7 +70,7 @@ struct FeedCell: View {
                 
             // caption label
             HStack{
-                Text("BossBabe ").fontWeight(.semibold) +
+                Text("theRealBossBabe ").fontWeight(.semibold) +
                 Text(" Its great to be a real boss babe chasing the bag CashApp: $BossBabe123")
             }
             .frame(maxWidth: .infinity, alignment: .leading)
