@@ -61,8 +61,30 @@ struct FeedCell: View {
             .foregroundColor(.black)
             
             //likes labe;
-            
+            Text("23 Likes")
+                .font(.footnote)
+                .fontWeight(.semibold)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 10)
+                .padding(.top, 1)
+                
             // caption label
+            HStack{
+                Text("BossBabe ").fontWeight(.semibold) +
+                Text(" Its great to be a real boss babe chasing the bag CashApp: $BossBabe123")
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .font(.footnote)
+            .padding(.leading, 10)
+            .padding(.top, 1)
+         
+            //Time stamp
+            Text("6 hours ago")
+                .font(.footnote)
+                .foregroundColor(.gray)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 10)
+                .padding(.top, 1)
         }
     }
 }
