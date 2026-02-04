@@ -12,12 +12,30 @@ struct ProfileView: View {
         VStack {
             
             //Header
-            VStack {
+            VStack(spacing: 10) {
                 
                 //pictures and stats
                 HStack {
+                    Image("meHongKongBeach")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 80, height: 80)
+                        .clipShape(Circle())
+                        .shadow(radius: 10)
                     
+                    Spacer()
+                    
+                    HStack(spacing: 8){
+                        
+                        UserStatView(value: 123, title: "Posts")
+                        
+                        UserStatView(value: 456, title: "Followers")
+                        
+                        UserStatView(value: 789, title: "Following")
+                    }
                 }
+                .padding(.vertical)
+                .padding(.horizontal)
                 
                 //Name and Bio
                 VStack(alignment: .leading , spacing: 4) {
