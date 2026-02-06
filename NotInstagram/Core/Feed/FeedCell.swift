@@ -69,14 +69,11 @@ struct FeedCell: View {
                 .padding(.top, 1)
                 
             // caption label
-            HStack{
-                Text("theRealBossBabe ").fontWeight(.semibold) +
-                Text(" Its great to be a real boss babe chasing the bag CashApp: $BossBabe123")
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .font(.footnote)
-            .padding(.leading, 10)
-            .padding(.top, 1)
+            Text("\(Text("theRealBossBabe").fontWeight(.semibold)) Its great to be a real boss babe chasing the bag CashApp: $BossBabe123")
+                .font(.footnote)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 10)
+                .padding(.top, 1)
          
             //Time stamp
             Text("6 hours ago")
