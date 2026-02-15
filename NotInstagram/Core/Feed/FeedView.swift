@@ -26,6 +26,10 @@ struct FeedView: View {
                         .resizable()
                         .frame(width: 100, height: 40)
                 }
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Image(systemName: "paperplane")
+                        .imageScale(.large)
+                }
             }
         }
     }

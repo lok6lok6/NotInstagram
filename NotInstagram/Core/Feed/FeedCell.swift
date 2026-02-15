@@ -60,7 +60,7 @@ struct FeedCell: View {
             .padding(.leading, 8)
             .foregroundColor(.black)
             
-            //likes labe;
+            //likes label;
             Text("23 Likes")
                 .font(.footnote)
                 .fontWeight(.semibold)
