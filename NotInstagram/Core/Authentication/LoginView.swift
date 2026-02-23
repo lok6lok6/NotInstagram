@@ -14,6 +14,9 @@ struct LoginView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                
+                Spacer()
+                
                 Image("NotIGWorse")
                     .resizable()
                     .scaledToFill()
@@ -82,6 +85,25 @@ struct LoginView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color(.systemBlue))
                 }
+                .padding(.top, 8)
+                
+                //make space to seperate navi link
+                Spacer()
+                
+                Divider()
+                
+                NavigationLink {
+                    Text("Sign Up")
+                } label: {
+                    HStack(spacing: 3) {
+                        Text("Don't have an account?")
+                            .font(.footnote)
+                        Text("Sign Up")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                    }
+                }
+                .padding(.vertical, 16)
             }
         }
     }
