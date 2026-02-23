@@ -59,6 +59,29 @@ struct LoginView: View {
                         .cornerRadius(10)
                 }
                 .padding(.vertical)
+                
+                HStack {
+                    Rectangle()
+                        .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+                    
+                    Text("OR")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                    
+                    Rectangle()
+                        .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+                }
+                .foregroundColor(.gray)
+                
+                HStack {
+                    Image("Facebook_logo")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                    Text("Continue with Facebook")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color(.systemBlue))
+                }
             }
         }
     }
