@@ -35,6 +35,17 @@ struct LoginView: View {
                         .cornerRadius(10)
                         .padding(.horizontal, 24)
                 }
+                
+                Button {
+                    print("Show Forgot Password")
+                } label: {
+                    Text("Forgot Password?")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                        .padding(.top)
+                        .padding(.trailing, 28)
+                }
+                .frame(maxWidth: .infinity, alignment: .trailing)
             }
         }
     }
