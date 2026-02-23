@@ -46,6 +46,19 @@ struct LoginView: View {
                         .padding(.trailing, 28)
                 }
                 .frame(maxWidth: .infinity, alignment: .trailing)
+                
+                Button {
+                    print("Login")
+                } label: {
+                    Text("Log In")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .frame(width: 360, height: 44)
+                        .background(Color(.systemBlue))
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .padding(.vertical)
             }
         }
     }
