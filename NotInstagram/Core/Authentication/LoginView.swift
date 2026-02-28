@@ -63,18 +63,18 @@ struct LoginView: View {
                 }
                 .padding(.vertical)
                 
-                HStack {
-                    Rectangle()
-                        .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
-                    
-                    Text("OR")
-                        .font(.footnote)
-                        .fontWeight(.semibold)
-                    
-                    Rectangle()
-                        .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+                GeometryReader { geo in
+                    HStack(spacing: 10) {
+                        Rectangle().frame(width: (geo.size.width - 40) / 2, height: 0.5)
+                        
+                        Text("OR").font(.footnote).fontWeight(.semibold)
+                        
+                        Rectangle().frame(width: (geo.size.width - 40) / 2, height: 0.5)
+                    }
+                    .foregroundStyle(.gray)
                 }
-                .foregroundColor(.gray)
+                .frame(height: 35)
+                .padding(.horizontal, 24)
                 
                 HStack {
                     Image("Facebook_logo")
