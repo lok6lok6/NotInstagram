@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AddEmailView: View {
+    @State private var email = ""
+    
     var body: some View {
         
         VStack(spacing: 12) {
@@ -21,6 +23,30 @@ struct AddEmailView: View {
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
+            
+            TextField("Email", text: $email)
+                .autocapitalization(.none)
+                .font(.subheadline)
+                .padding(12)
+                .background(Color(.systemGray6))
+                .cornerRadius(10)
+                .padding(.horizontal, 24)
+                .padding(.top)
+            
+            Button {
+                print("Continue")
+            } label: {
+                Text("Continue")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .frame(width: 360, height: 44)
+                    .background(Color(.systemBlue))
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            .padding(.vertical)
+            
+            Spacer()
         }
     }
 }
